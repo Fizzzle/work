@@ -1,0 +1,9 @@
+@import './libs/bootstrap-reboot.min';
+@import './variebles/_variebles';
+
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+ 
+@import './block/promo';
