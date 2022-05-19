@@ -1,0 +1,24 @@
+.promo{
+    padding-top: 212px;
+    background: url('/img/bg/promobg.png') no-repeat right;
+    background-color: #F4F4F4;
+    min-height: 645px;
+    &__title{
+        color: $color;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: 62px;
+    }
+    &__subtitle{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        color:#262626;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    &__btn{
+        padding: 15px 54px;
+    }
+}

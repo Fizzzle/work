@@ -1,0 +1,71 @@
+.categories{
+    border-bottom: 1px solid #e5e5e5;
+    &__list{
+        padding-left: 75px;
+        min-height: 121px;
+        align-items: center;
+        list-style-type: none;
+        display: flex;
+        gap: 172px;
+    }
+    &__item{
+        position: relative;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        padding-left: 40px;
+        &::after{
+            content: '';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+            width: 25px;
+            height: 25px;
+        }
+        &::before{
+            position: absolute;
+            content: '';
+            width: 1px;
+            height: 140px;
+            right: -100px;
+            bottom: -65px;
+            background-color: #e5e5e5;
+
+        }
+        &:nth-child(1){            
+            &:after{
+                background: url('/icons/categories/bolt.svg') no-repeat;
+            }
+        }
+        &:nth-child(2){
+            margin-right: 44px;
+            &:after{
+                background: url('/icons/categories/Group.svg') no-repeat;
+            }         
+            &:before{
+                right: -120px;
+            }   
+        }
+        &:nth-child(3){
+            margin-right: 64px;
+             &:after{
+                background: url('/icons/categories/oil.svg') no-repeat;
+            }     
+            &:before{
+                right: -150px;
+            }         
+        }
+        &:nth-child(4){
+             &:after{
+                background: url('/icons/categories/water.svg') no-repeat;
+            }  
+            
+        }
+        &:nth-child(4){
+            &::before{
+                display: none;
+            }
+        }
+    }
+}

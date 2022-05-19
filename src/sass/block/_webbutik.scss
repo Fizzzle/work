@@ -1,0 +1,42 @@
+.webbutik{
+    padding-top: 100px;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 341px);
+        gap: 25px;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        padding: 25px 30px;
+        background-color:  #F9F9F9;
+    }
+    &__name{
+        margin-top: 50px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+    }
+    &__text{
+        margin-top: 15px;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #9f9f9f;
+        span{
+            color: #262626;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 47px;
+        }
+    }
+    &__snap{
+        margin-top: 35px;
+        text-align: center;
+        padding: 15px 77px;
+    }
+}

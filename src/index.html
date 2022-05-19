@@ -19,12 +19,12 @@
                 </div>
                 <div class="menu">
                     <ul class="menu__list">
-                        <li class="menu__item">POWERUP WEBBUTIK</li>
-                        <li class="menu__item">ÅTERFÖRSÄLJARE</li>
-                        <li class="menu__item">KONTAKTA OSS</li>
-                        <li class="menu__item">SÄKERHETSDATABLAD</li>
+                        <li class="menu__item"><a class="menu__link" href="#">POWERUP WEBBUTIK</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">ÅTERFÖRSÄLJARE</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">KONTAKTA OSS</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">SÄKERHETSDATABLAD</a></li>
                     </ul>
-                    <div>
+                    <div class="header__basket">
                         <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M27.0003 25.9325L25.2825 6.58896C25.2457 6.15951 24.8837 5.83436 24.4604 5.83436H20.9267C20.8776 2.60736 18.2395 0 15.0003 0C11.761 0 9.12297 2.60736 9.07389 5.83436H5.54015C5.11071 5.83436 4.75488 6.15951 4.71807 6.58896L3.00028 25.9325C3.00028 25.9571 2.99414 25.9816 2.99414 26.0061C2.99414 28.2086 5.01255 30 7.49721 30H22.5033C24.988 30 27.0064 28.2086 27.0064 26.0061C27.0064 25.9816 27.0064 25.9571 27.0003 25.9325ZM15.0003 1.65644C17.3254 1.65644 19.2211 3.52147 19.2702 5.83436H10.7303C10.7794 3.52147 12.6751 1.65644 15.0003 1.65644ZM22.5033 28.3436H7.49721C5.93893 28.3436 4.67512 27.3129 4.65058 26.0429L6.29475 7.49693H9.06776V10.0123C9.06776 10.4724 9.43586 10.8405 9.89598 10.8405C10.3561 10.8405 10.7242 10.4724 10.7242 10.0123V7.49693H19.2702V10.0123C19.2702 10.4724 19.6383 10.8405 20.0984 10.8405C20.5586 10.8405 20.9267 10.4724 20.9267 10.0123V7.49693H23.6997L25.35 26.0429C25.3254 27.3129 24.0555 28.3436 22.5033 28.3436Z"
@@ -38,11 +38,95 @@
     </header>
 
     <section class="promo">
-        <div class="container"></div>
+        <div class="container">
+            <h1 class="title promo__title">PowerUp Lubricants —</h1>
+            <h2 class="subtitle promo__subtitle">våra produkter håller alltid hög kvalitet!</h2>
+            <a href="#" class="btn promo__btn">Beställ online</a>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <ul class="categories__list">
+                <li class="categories__item">Smörjmedel och <br> rostlösande sprayer</li>
+                <li class="categories__item">Diesel injector</li>
+                <li class="categories__item">Oil additiv</li>
+                <li class="categories__item">Smörjfett</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="webbutik">
+        <div class="container">
+            <div class="webbutik__header">
+                <h2 class="webbutik__title">Webbutik</h2>
+                <a href="#" class="btn webbutik__btn">Gå till webbutik</a>
+            </div>
+            <div class="webbutik__wrapper">
+                <div class="webbutik__item">
+                    <img src="/img/product/first.png" alt="img">
+                    <div class="webbutik__name">Bensininjector multifunction</div>
+                    <p class="webbutik__text"><span class="webbutik__price">110.00kr</span> exkl. moms</p>
+                    <a href="#" class="btn webbutik__snap">Lägg i varukorg</a>
+                </div>
+                <div class="webbutik__item">
+                    <img src="/img/product/two.png" alt="img">
+                    <div class="webbutik__name">Bensininjector multifunction</div>
+                    <p class="webbutik__text"><span class="webbutik__price">110.00kr</span> exkl. moms</p>
+                    <a href="#" class="btn webbutik__snap">Lägg i varukorg</a>
+                </div>
+                <div class="webbutik__item">
+                    <img src="/img/product/three.png" alt="img">
+                    <div class="webbutik__name">Bensininjector multifunction</div>
+                    <p class="webbutik__text"><span class="webbutik__price">110.00kr</span> exkl. moms</p>
+                    <a href="#" class="btn webbutik__snap">Lägg i varukorg</a>
+                </div>
+                <div class="webbutik__item">
+                    <img src="/img/product/four.png" alt="img">
+                    <div class="webbutik__name">Bensininjector multifunction</div>
+                    <p class="webbutik__text"><span class="webbutik__price">110.00kr</span> exkl. moms</p>
+                    <a href="#" class="btn webbutik__snap">Lägg i varukorg</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="hem">
+        <div class="container">
+            <div class="hem__wrapper">
+                <div class="hem__block">
+                    <h2 class="hem__title">HEM</h2>
+                    <p class="hem__descr"><span>PowerUp Sverige AB</span> är ett företag som säljer smörjmedel,
+                        smörjfett, oil
+                        additiv och
+                        dieseltillsatser av högsta kvalitet.
+                        Våra produkter gör är att det förhindrar onödigt slitage och extra reparationskostnader. Ett bra
+                        smörjmedel tillsammans
+                        med oljetillsatser ökar både livslängden på mekaniska delar samt på bränslesystem. <br>
+                        <br>
+                        Alla produkter tillverkas med kunden i åtanke för att de underhållsprodukter som ni väljer att
+                        använda ska hålla högsta
+                        kvalitet. Du sparar pengar och ökar livslängden på din motor när du väljer produkter från
+                        PowerUp. Vi har över 30 års
+                        erfarenhet av att producerat högkvalitativ produkter.
+                        <br>
+                        <br>
+                        PowerUp’s produkter används idag inom lantbruk, skogsbruk, åkerier, verkstäder samt naturligtvis
+                        i den krävande skoter,
+                        bil/motorcyckel – och båtracingsporten. Våra produkter håller alltid hög kvalitet och är
+                        tillverkade för att ge
+                        slutkunden den bästa möjliga produkten.
+                    </p>
+                </div>
+                <div class="hem__img">
+                    <img src="/img/hem_img.jpg" alt="hem">
+                </div>
+            </div>
+        </div>
     </section>
 
 
-    <script src="/js/script.js"></script>
+    <script src="/js/script.min.js"></script>
 </body>
 
 </html>
