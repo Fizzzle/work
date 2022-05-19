@@ -1,0 +1,33 @@
+.hem{
+    padding-top: 200px;
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 584px 826px;
+        column-gap:50px;
+    }
+    &__title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 46px;
+        margin-bottom: 50px;
+    }
+    &__descr{
+        text-indent: 20px;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 400;
+        span{
+            font-weight: 700;
+            color: $color;
+        }
+    }
+    &__img{
+        margin-top: 11px;
+        width: 826px;
+        height: 500px;
+        object-fit: cover;
+        img{
+            width: 100%;
+        }
+    }
+}
