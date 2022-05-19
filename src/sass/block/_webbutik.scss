@@ -3,8 +3,21 @@
     &__header{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+    &__btn{
+        background-color: #fff;
+        color: $color;
+        border: 1px solid $color;
+        &:hover{
+            color: $color;
+        }
+    }
+    &__title{
+        margin-bottom: 0;
     }
     &__wrapper{
+        margin-top: 23px;
         display: grid;
         grid-template-columns: repeat(4, 341px);
         gap: 25px;
@@ -14,6 +27,12 @@
         flex-direction: column;
         padding: 25px 30px;
         background-color:  #F9F9F9;
+        &:hover{
+            background-color: #fff;
+        }
+        &-active{
+            display: flex;
+        }
     }
     &__name{
         margin-top: 50px;
@@ -39,4 +58,7 @@
         text-align: center;
         padding: 15px 77px;
     }
+}
+.more{
+    display: none;
 }

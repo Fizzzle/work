@@ -2,6 +2,9 @@
 @import './variebles/variebles';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
+hr{
+    border: 1px solid #363636;
+}
 
 body{
     font-family: 'DM Sans', sans-serif;
@@ -21,3 +24,5 @@ body{
 @import './block/hem';
 @import './block/web';
 @import './block/skiska';
+@import './block/footer';
+@import './block/media';
