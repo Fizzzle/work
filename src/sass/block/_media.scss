@@ -18,6 +18,78 @@
             width: 510px;
         }
     }
+    .categories{
+        &__wrapper{
+            grid-template-columns: repeat(4, 290px);
+            align-content: center;
+        }
+        &__item{
+            &::after{
+                left: 30px;
+            }
+            &:nth-child(1){
+                padding-left: 70px;
+                &::after{
+                    top: 50%;
+                    left: 25px;
+                }
+            }
+            &:nth-child(2){
+                &::after{
+                    left: 50px;
+                }
+            }
+            &:nth-child(3){
+                &::after{
+                    left: 60px;
+                }
+            }
+            &:nth-child(4){
+                &::after{
+                    left: 65px;
+                }
+            }
+        }
+    }    
+    .webbutik{
+        &__wrapper{
+            grid-template-columns: repeat(3, 341px);
+            justify-content: space-between;
+        }
+    }
+    .hem{
+        &__wrapper{
+            grid-template-columns: 500px 500px;
+            column-gap: 20px;
+        }
+        &__img{
+            margin-top: 55px;
+            width: 638px;
+        }
+    }
+    .web{
+        padding-top: 140px;
+        &__wrapper{
+            justify-content: space-between;
+            grid-template-columns: repeat(2, 463px);
+        }
+    }
+    .skiska{
+        padding-top: 120px;
+        &__wrapper{
+            grid-template-columns: repeat(2, 575px);
+            column-gap: 10px;
+        }
+        &__block{
+            padding: 30px 20px;
+        }
+        &__descr{
+            margin-bottom: 25px;
+        }
+        &__form{
+            grid-template-columns: repeat(2, 260px);
+        }
+    }
 }
 
 @media (max-width: 1200px) {
@@ -36,8 +108,99 @@
     }
     .promo{
         min-height: 480px;
-        padding-top: 90px;
-        background: url(/img/bg/promobg.png) no-repeat 170%;
+        padding-top: 90px;        
+    }
+    .categories{
+        &__wrapper{
+            margin-top: 0;
+            grid-template-columns: repeat(2, 1fr);
+            min-height: 280px;
+        }
+        &__item{
+            &::after{
+                left: 100px;
+            }
+            &:nth-child(1){
+                padding-left: 150px;
+                &::after{
+                    left: 110px;
+                }
+            }
+            &:nth-child(2){
+                border-right: none;
+                &::after{
+                    left: 130px;
+                }
+            }
+            &:nth-child(3){
+                &::after{
+                    left: 150px;
+                }
+            }
+            &:nth-child(4){
+                min-height: 140px;
+                &::after{
+                    left: 160px;
+                }
+            }
+        }
+    }    
+    .webbutik{
+        padding-top: 60px;
+        &__wrapper{
+            grid-template-columns: repeat(3, 299px);
+            justify-content: space-between;
+        }
+        &__snap{
+            padding: 15px 60px;
+        }
+    }
+    .hem{
+        padding-top: 100px;
+        &__wrapper{
+            grid-template-columns: 470px 500px;
+            column-gap: 20px;
+        }
+        &__img{
+            margin-top: 70px;
+            width: 470px;
+        }
+        &__title{
+            margin-bottom: 25px;
+        }
+        &__descr{
+            font-size: 16px;
+        }
+    }
+    .web{
+        padding-top: 100px;
+        &__title{
+            text-align: center;
+        }
+        &__wrapper{
+            justify-content: center;
+            grid-template-columns: repeat(2, 463px);
+            gap: 40px 20px;
+        }
+    }
+    .skiska{
+        padding-top: 120px;
+        &__wrapper{
+            grid-template-columns: repeat(2, 475px);
+            column-gap: 10px;
+        }
+        &__block{
+            padding: 10px;
+        }
+        &__descr{
+            margin-bottom: 15px;
+        }
+        &__form{
+            grid-template-columns: repeat(2, 220px);
+        }
+        &__btn{
+            padding: 15px 70px;
+        }
     }
 }
 
@@ -58,7 +221,7 @@
         &__list{
             position: absolute;
             top: 70px;
-            left: -100%;
+            left: -200%;
             padding: 20px;
             background-color: #fff;
             flex-direction: column;
@@ -76,15 +239,484 @@
         }
     }
     .promo{
-        padding-top: 60px;
-        min-height: 430px;
-        background: url(/img/bg/promobg.png) no-repeat right/50%;
+        padding: 60px 0;
+        min-height: 313px;
         &__title{
             font-size: 40px;
         }
         &__subtitle{
             font-size: 32px;
             width: 450px;
+        }
+    }
+    .categories{
+        &__wrapper{
+            margin-top: 0;
+            grid-template-columns: repeat(2, 1fr);
+            min-height: 280px;
+        }
+        &__item{
+            &::after{
+                left: 55px;
+            }
+            &:nth-child(1){
+                padding-left: 90px;
+                &::after{
+                    left: 50px;
+                }
+            }
+            &:nth-child(2){
+                border-right: none;
+                &::after{
+                    left: 80px;
+                }
+            }
+            &:nth-child(3){
+                &::after{
+                    left: 100px;
+                }
+            }
+            &:nth-child(4){
+                min-height: 140px;
+                &::after{
+                    left: 105px;
+                }
+            }
+        }
+    }  
+    .webbutik{
+        padding-top: 60px;
+        &__wrapper{
+            grid-template-columns: repeat(2, 300px);
+            justify-content: space-between;
+        }
+        &__snap{
+            padding: 15px 60px;
+        }
+    }    
+    .hem{
+        padding-top: 80px;
+        .container{
+            width: 100%;
+        }
+        &__wrapper{
+            grid-template-columns: 1fr;
+        }
+        &__block{
+            display: block;
+            margin: 0 auto;
+            width: 570px;
+        }
+        &__img{
+            margin-top: 40px;
+            width: 100%;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__descr{
+            text-align: center;
+            font-size: 18px;
+        }
+    }  
+    .web{
+        padding-top: 60px;
+        &__title{
+            text-align: center;
+        }
+        &__wrapper{
+            justify-content: center;
+            grid-template-columns: 463px;
+            gap: 40px;
+        }
+        &__name{
+            text-align: center;
+        }
+        &__snap{
+            display: block;
+            margin: 0 auto;
+            width: 185px;
+            text-align: center;
+        }
+        &__subtitle{
+            margin-top: 50px;
+            text-align: center;
+        }
+    }
+    .skiska{
+        padding-top: 120px;
+        .container{
+            width: 100%;
+        }
+        &__wrapper{
+            grid-template-columns: 1fr;
+            column-gap: 10px;
+        }
+        &__block{
+            order: 2;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__descr{
+            text-align: center;
+            width: 592px;
+            margin: 0 auto;
+            margin-bottom: 35px;
+        }
+        &__form{
+            justify-content: center;
+            grid-template-columns: repeat(2, 280px);
+        }
+        &__btn{
+            margin-top: 5px;
+        }
+    }
+}
+@media (max-width: 768px){
+    .container{
+        max-width: 540px;
+    }
+    .header{
+        &__logo{
+            padding-left: 160px;
+            img{                
+                width: 180px;
+            }
+        }
+        &__btn{
+            display: none;
+        }
+    }
+    nav{
+        height: 75px;
+    }
+    .promo{
+        padding-top: 30px;
+        background: #f4f4f4;
+        min-height: 300px;
+    }
+    .categories{
+        &__wrapper{
+            margin-top: 0;
+            grid-template-columns: repeat(2, 1fr);
+            min-height: 230px;
+        }
+        &__item{
+            padding: 45px 0 40px 35px;
+            &::after{
+                left: 15px;
+            }
+            &:nth-child(1){
+                padding-top: 35px;
+                padding-left: 64px;
+                padding-bottom: 20px;
+                &::after{
+                    top: 53%;
+                    left: 25px;
+                }
+            }
+            &:nth-child(2){
+                &::after{
+                    top: 50%;
+                    left: 50px;
+                }
+            }
+            &:nth-child(3){
+                &::after{
+                    top: 50%;
+                    left: 65px;
+                }
+            }
+            &:nth-child(4){
+                min-height: 50px;
+                &::after{
+                    top: 50%;
+                    left: 70px;
+                }
+            }
+        }
+    }    
+    .webbutik{
+        padding-top: 60px;
+        &__wrapper{
+            grid-template-columns: 320px;
+            justify-content: center;
+        }
+    } 
+    .hem{
+        .container{
+            max-width: 100%;
+            margin: 0;
+        }
+        &__block{
+            width: 540px;
+            margin: 0 auto;
+        }
+    }     
+    .skiska{
+        padding-top: 70px;
+        .container{
+            max-width: unset;
+        }
+        &__wrapper{
+            grid-template-columns: 1fr;
+            column-gap: 10px;
+        }
+        &__block{
+            order: 2;
+        }
+        &__title{
+            text-align: center;
+        }
+        &__descr{
+            text-align: center;
+            width: 540px;
+            margin: 0 auto;
+            margin-bottom: 35px;
+        }
+        &__form{
+            justify-content: center;
+            grid-template-columns: repeat(2, 260px);
+        }
+        &__btn{
+            margin-top: 5px;
+        }
+    }
+    .footer{
+        &__wrapper{
+            margin-top: 40px;
+            text-align: center;
+            grid-template-columns: 1fr;
+        }
+        &__list{
+            margin-bottom: 30px;
+        }
+        &__item-first{
+            margin-bottom: 5px;
+        }
+    }
+}
+
+@media (max-width: 576px){
+    .container{
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .header{
+        &__logo{
+            padding-left: 160px;
+        }
+        &__btn{
+            display: none;
+        }
+    }
+    nav{
+        height: 75px;
+    }
+    .promo{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        background: #f4f4f4;
+        min-height: 263px;
+        &__title{
+            font-size: 36px;
+            line-height: 47px;
+        }
+        &__subtitle{
+            width: 232px;
+            font-size: 24px;
+            line-height: 32px;
+            width: 330px;
+            margin-bottom: 40px;
+        }
+        &__btn{
+            display: block;
+            margin: 0 auto;
+            width: 220px;
+        }
+    } 
+    .categories{
+        &__wrapper{
+            min-height: 412px;
+            grid-template-columns: 1fr
+        }
+        &__item{
+            font-size: 16px;
+            &:nth-child(1){
+                text-align: center;
+                padding-top: 25px;
+            }
+        }
+    }   
+    .webbutik{
+        padding-top: 60px;
+        &__wrapper{
+            grid-template-columns: 300px;
+            justify-content: center;
+        }    
+        &__title{
+            font-size: 20px;
+        }
+        &__name{
+            font-size: 16px;
+        }
+        &__text{
+            font-size: 14px;
+            span{
+                font-size: 24px;
+            }
+        }
+        &__snap{
+            margin-top: 24px;
+        }
+        &__btn{
+            display: none;
+            &-down{
+                display: block;
+            }
+        }
+    }  
+    .hem{
+        padding-top: 50px;
+        .container{
+            padding: 0;
+        }   
+        &__block{
+            padding: 0 15px;
+            width: 100%;
+        }        
+        &__title{
+            text-align: left;            
+            font-size: 20px;
+            line-height: 26px;
+        }
+        &__descr{
+            text-align: left;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &__img{
+            margin-top: 0;
+        }
+    }
+    .web{
+        padding-top: 50px;
+        &__title{
+            font-size: 20px;
+            line-height: 26px;
+            text-align: left;
+        }
+        &__wrapper{
+            margin-top: 48px;
+            grid-template-columns: 300px;
+        }
+        &__item{
+            width: 100%;
+            min-height: unset;
+            img{
+                width: 100%;
+            }
+        }
+        &__name{
+            margin-top: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+        &__subtitle{
+            display: none;
+            &-360{
+                margin-top: 15px;
+                display: block;
+            }
+        }
+    }
+    .skiska{
+        padding: 50px 0;
+        .container{
+            padding: 0;
+        }
+        &__block{
+            padding-top: 30px;
+            padding-left: 10px;
+        }
+        &__title{
+            font-size: 20px;
+            line-height: 26px;
+            text-align: left;
+        }
+        &__descr{
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 18px;
+            text-align: left;
+            width: unset;
+            margin-bottom: 30px;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        &__trigger{
+            flex-direction: column;
+        }
+        &__btn{
+            order: 2;
+            width: 220px;
+            margin: 0 auto;
+        }
+        &__content{
+            align-self: start;
+            margin-bottom: 40px;
+        }
+    }
+    .footer{
+        &__item{
+            &-active{
+                &:hover{
+                    color:#fff;
+                }
+            }
+            &:hover{
+                color: #9f9f9f;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 460px){
+    .header{
+        &__logo{
+            width: 109px;
+            margin-left: 100px;
+            padding-left: 0px;
+            img{
+                width: 100%;
+            }
+        }
+        &__basket{
+            width: 25px;
+            &:after{
+                width: 14px;
+                height: 14px;
+                font-size: 10px;
+            }
+        }
+    }
+    .promo{
+        padding-top: 30px;
+        background: #f4f4f4;
+        min-height: 300px;
+        &__title{
+            font-size: 24px;
+            line-height: 31px;
+        }
+        &__subtitle{
+            width: 232px;
+            font-size: 18px;
+            line-height: 23px;
         }
     }
 }

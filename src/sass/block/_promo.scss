@@ -1,7 +1,7 @@
 .promo{
     padding-top: 212px;
-    background: url('/img/bg/promobg.png') no-repeat right;
-    background-color: #F4F4F4;
+    background: url('/img/bg/promobg.png') right center no-repeat #F4F4F4;   
+    background-size: contain;
     min-height: 645px;
     &__title{
         color: $color;

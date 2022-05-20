@@ -13,7 +13,7 @@
     &__wrapper{
         display: grid;
         grid-template-columns: repeat(3, 463px);
-        gap: 25px;
+        gap: 40px 25px;
         margin-top: 35px;
         min-height: 597px;
     }
@@ -21,9 +21,6 @@
     &__item{
         width: 463px;
         min-height: 597px;
-        img{
-            width: 100%;
-        }
     }
     &__name{
         margin-top: 15px;            
@@ -44,6 +41,7 @@
         }
     }
 
+    &__subtitle-360,
     &__subtitle{
         margin-top: 56px;                
         font-weight: 400;
@@ -51,6 +49,9 @@
         line-height: 18px;
         a{
             color:$color;
+        }
+        &-360{
+            display: none;
         }
     }
 }

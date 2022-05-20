@@ -12,6 +12,18 @@
         &:hover{
             color: $color;
         }
+        &-down{
+            display: none;
+            margin: 40px auto 0 auto;
+            text-align: center;
+            width: 168px;
+            background-color: #fff;
+            color: $color;
+            border: 1px solid $color;
+        &:hover{
+            color: $color;
+        }
+        }
     }
     &__title{
         margin-bottom: 0;
@@ -57,6 +69,9 @@
         margin-top: 35px;
         text-align: center;
         padding: 15px 77px;
+        &-out{
+            background: #DEDEDE;
+        }
     }
 }
 .more{
